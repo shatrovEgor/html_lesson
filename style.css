@@ -9,9 +9,10 @@
 
 .container {
     width: 1200px;
+    min-height: calc(100vh - 90px);
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .header {
@@ -20,18 +21,59 @@
     width: 1200px;
     height: 90px;
     background-color: #8cc34b;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .avatar {
     width: 60px;
     height: 60px;
     margin: 15px 20px 15px 30px;
-    background-color: black;
+    background-color: #8cc34b;
+}
+
+.avatar img {
+    background-color: #8cc34b;
+}
+
+.icon {
+    position: absolute;
+    top: 34px;
+    right: 30px;
+    width: 160px;
+    height: 30px;
+    background-color: #8cc34b
+    ;
+}
+
+#git {
+    background-color: #8cc34b;
+    width: 30px;
+    height: 30px;
+}
+
+#git,#sk,#vk:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#sk {
+    background-color: #8cc34b;
+    width: 30px;
+    height: 30px;
+    margin-left: 17px;
+}
+
+#vk {
+    height: 22px;
+    width: 39px;
+    margin: 3px 0 3px 15px;
+    background-color: #8cc34b;
+    opacity: 0.7;
 }
 
 .info {
     background-color: #8cc34b;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .info h1 {
@@ -44,69 +86,89 @@
     margin-top: 5px;
     padding: 0;
     color: white;
-    background-color: none
+    background-color: #8cc34b;
+    opacity: 0.7;
 }
 
 
 .main {
     width: 1200px;
-    height: 1700px;
     background-color: white;
 }
 
 .about {
     width: 1200px;
-    height: 475px;
     background-color: white;
     text-align: center;
 }
 
 .about h1 {
     background-color: white;
-    font-size: 36px;
-    padding-top: 70px;
+    font-size: 42px;
+    color: #212121;
+    padding-top: 76px;
 }
 
 .about p {
     background-color: white;
-    padding: 20px;
+    color: #727272;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 27.82px;
+    padding: 19px 0 40px;
 }
 
 .infoAbout {
     display: flex;
+    flex-wrap: wrap;
     background-color: white;
     justify-content: center;
 }
 
 .aboutMe {
     background-color: white;
-    height: 250px;
-    width: 400px;
-    margin-left: 40px;
     display: flex;
+    margin-right: 45px;
+    margin-bottom: 75px;
 }
 
 .aboutMeF {
     display: block;
     background-color: white;
+    
+    padding-left: 22px;
 }
 
 .aboutMe h1,
 .aboutMe p,
 .about a{
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     background-color: white;
 }
+
+.aboutMe p {
+    width: 275px;
+}
 .aboutMe h1 {
-    padding: 10px 0;
-    font-size: 18px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 10px;
+}
+
+.aboutMe p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.aboutMe a {
+    color: rgb(67, 126, 160);
 }
 
 .courses {
     width: 1200px;
-    height: 1225px;
     background-color: #f6f7f2;
     text-align: center;
 }
@@ -127,40 +189,93 @@
 }
 
 .img {
-    width: 150px;
-    height: 160px;
-    margin: 5px;
+    width: 140px;
+    height: 137px;
+    background-color: white;
 }
 
 .img2 {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 129px;
     margin: 5px;
+    background-color: white;
 }
 
 .text h1{
     background-color: #f6f7f2;
-    font-size: 34px;
+    font-size: 42px;
+    line-height: 27.82px;
+    font-weight: 500;
 }
 .text p {
     font-size: 22px;
-    padding: 20px;
+    padding: 0;
+    padding-top: 23px;
     background-color: #f6f7f2;
 }
 
 .text {
-    padding: 90px 0 40px 0;
+    padding: 78px 0 45px 0;
     background-color: #f6f7f2;
 }
 
 .container2 {
     width: 300px;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     background-color: #f6f7f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container21 {
+    height: 430px;
+    width: 300px;
+    margin: 0px 10px 10px 10px;
+    background-color: #f6f7f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container22 {
+    height: 430px;
+    width: 300px;
+    margin: 0px 10px 10px 10px;
+    background-color: #f6f7f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container23 {
+    height: 490px;
+    width: 300px;
+    margin: 0px 10px 10px 10px;
+    background-color: #f6f7f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container24 {
+    height: 435px;
+    width: 300px;
+    margin: 0px 10px 10px 10px;
+    background-color: #f6f7f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.container25 {
+    height: 472px;
+    width: 300px;
+    margin: 0px 10px 10px 10px;
+    background-color: #f6f7f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.container26 {
+    height: 435px;
+    width: 300px;
+    margin: 0px 10px 10px 10px;
+    background-color: #f6f7f2;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 
+
 .container1 {
+    width: 1200px;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #f6f7f2;
@@ -168,41 +283,50 @@
 }
 
 .block {
-    position: relative;
     width: 300px;
-    height: 390px;
     background-color: white;
     text-align: left;
 }
 
 .textBlock {
     background: none;
-    position: absolute;
-    bottom: 25px;
-    opacity: 0.5;
+    opacity: 0.7;
 }
+
 
 .textBlock:hover {
     opacity: 1;
-    border-top: 5px solid #8cc34b;
+    cursor: pointer;
 }
 
 .textBlock:hover h2 {
     color: #8cc34b;
 }
 
-.block h2,p {
-    background: none;
-    padding: 15px;
+.textBlock:hover .ram {
+    opacity: 1;
 }
+
+.block h2 {
+    background: none;
+    padding-left: 20px;
+    padding-top: 18px;
+    background-color: white;
+    font-size: 21px;
+}
+
+.block p {
+    padding: 15px 24px 18px 20px;
+    background-color: white;
+}
+
 .block2 {
     width: 300px;
-    height: 415px;
     background-color: white;
 }
 
 .check {
-    padding: 20px;
+    padding: 19px;
     width: 160px;
     background-color: #f6f7f2;
     display: flex;
@@ -221,30 +345,32 @@
 
 
 .imgBlock {
+    display: block;
     width: 300px;
-    height: 240px;
+    height: 170px;
+    padding: 0;
+    margin: 0;
 }
 
 .clock {
+    display: flex;
     background-color: white;
     opacity: 0.7;
+    padding-bottom: 17px;
 }
 
 .clock p {
-    position: absolute;
     padding: 0;
-    bottom: 10px;
-    left: 40px;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .imgClock {
-    position: absolute;
     width: 15px;
     height: 15px;
+    margin-left: 20px;
+    margin-right: 5px;
     background-color: white;
-    left: 20px;
-    bottom: 10px;
 }
 
 .custom-checkbox {
@@ -293,5 +419,11 @@
   /* стили для чекбокса, находящегося в состоянии disabled */
   .custom-checkbox:disabled+label::before {
     background-color: #e9ecef;
+  }
+
+  .ram {
+      height: 5px;
+      background-color:#8cc34b;
+      opacity: 0;
   }
 
